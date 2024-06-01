@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="Firefly logo for news application 68534.jpg" alt="">
+                </div>
+                <div class="inputfield">
+                    <input type="search" placeholder="Search...">
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="temprature">
+                    <p>Bhopal</p>
+                </div>
+                <div class="profile" onclick="profile()">
+                   <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybHMlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+                </div>
+            </div>
+            <nav>
+                <div class="categories">
+                    <button onclick="fetchCategoryNews('general')">General</button>
+                    <button onclick="fetchCategoryNews('entertainment')">entertainment</button>
+                    <button onclick="fetchCategoryNews('sports')">sports</button>
+                    <button onclick="fetchCategoryNews('business')">business</button>
+                    <button onclick="fetchCategoryNews('technology')">technology</button>
+                    <button onclick="fetchCategoryNews('health')">health</button>
+                    <button onclick="fetchCategoryNews('science')">science</button>
+
+
+
+                    <!-- Add more categories as needed -->
+                  </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="news-container">
+
+            </div>
+        </main>
+
+        <div id="profile">
+            <div class="close">
+                <i class="ri-close-large-line"></i>
+            </div>
+            <div class="img">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybHMlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <div class="names">
+                <h1>Sumaiya khan</h1>
+                <p>eng.sumaiyakhan@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
